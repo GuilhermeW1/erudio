@@ -30,7 +30,7 @@ jobs:
 
     - name: Docker compose build
       working-directory: ./
-      run: docker-compose build
+      run: docker compose build
 
     - name: Push to Docker HUb container regestry
       run: |
