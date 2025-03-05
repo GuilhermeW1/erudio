@@ -21,7 +21,8 @@ services:
 
   erudio:
     restart: always
-    image: guiaw/erudio-app  # Agora usa a imagem Docker que você construiu
+    image: guiaw/erudio-app:latest
+    build: .
     environment:
       TZ: America/Sao_Paulo
       SPRING.DATASOURCE.URL: jdbc:mysql://db:3308/erudio?useTimezone=true&serverTimezone=UTC
