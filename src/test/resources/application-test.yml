@@ -1,0 +1,30 @@
+file:
+  upload-dir: ./loads
+cors:
+  originPatterns: http://localhost:8080,http://localhost:3000
+security:
+  jwt:
+    token:
+      secret-key: 53c57
+      expire-length: 3600000
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    open-in-view: false
+  profiles:
+    active: test
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+springdoc:
+  swagger-ui:
+    use-root-path: true
+server:
+  port: 8888

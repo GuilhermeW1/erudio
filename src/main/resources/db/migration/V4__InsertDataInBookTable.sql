@@ -1,0 +1,1 @@
+INSERT INTO `book` (`author`, `title`, `publish_date`, `price`) values ('Gui', 'A votla dos que nao foram', '2000-07-07', 100.0);
